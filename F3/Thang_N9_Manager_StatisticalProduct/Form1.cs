@@ -9,12 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace Thang_N6_Admin_ManageIncome
+namespace Thang_N9_Manager_StatisticalProduct
 {
     public partial class Form1 : Form
     {
+        public static Form1 instance;
         public Form1()
         {
+            if(instance == null)
+            {
+                instance = this;
+            }
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-2J4GSB2;Initial Catalog=Product;Integrated Security=True");
@@ -23,7 +28,7 @@ namespace Thang_N6_Admin_ManageIncome
         {
             con.Open();
 
-            string sql = "Select * from Income ";
+            string sql = "Select * from Stuff ";
 
             SqlCommand comm = new SqlCommand(sql, con);
             comm.CommandType = CommandType.Text;
@@ -33,15 +38,21 @@ namespace Thang_N6_Admin_ManageIncome
             da.Fill(dt);
 
             con.Close();
-
+            dataGridView1.ClearSelection();
             dataGridView1.DataSource = dt;
 
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
             connect();
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+            this.Show();
+        }
     }
 }

@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thang_N9_Admin_ManageProduct", "Thang_N9_Admin_ManageProduct.csproj", "{BFA20D95-67D1-44B8-882B-0B6BFEAADD44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thang_N6_Admin_ManageIncome", "F2\Thang_N6_Admin_ManageIncome\Thang_N6_Admin_ManageIncome.csproj", "{4F570377-FD1F-4A1C-8EC9-1C1876819908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thang_N9_Manager_StatisticalProduct", "F3\Thang_N9_Manager_StatisticalProduct\Thang_N9_Manager_StatisticalProduct.csproj", "{60314EAF-71CA-48D4-B143-2A2452EEE5D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BFA20D95-67D1-44B8-882B-0B6BFEAADD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFA20D95-67D1-44B8-882B-0B6BFEAADD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFA20D95-67D1-44B8-882B-0B6BFEAADD44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F570377-FD1F-4A1C-8EC9-1C1876819908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F570377-FD1F-4A1C-8EC9-1C1876819908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F570377-FD1F-4A1C-8EC9-1C1876819908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F570377-FD1F-4A1C-8EC9-1C1876819908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60314EAF-71CA-48D4-B143-2A2452EEE5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60314EAF-71CA-48D4-B143-2A2452EEE5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60314EAF-71CA-48D4-B143-2A2452EEE5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60314EAF-71CA-48D4-B143-2A2452EEE5D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

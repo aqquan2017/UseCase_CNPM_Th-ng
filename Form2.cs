@@ -63,6 +63,7 @@ namespace Thang_CNPM
             {
                 //Đặt khóa chính là name nên nếu lưu trùng tên sẽ throw ra lỗi
                 label7.Text = "Sản phẩm đã tồn tại !";
+                Console.WriteLine(s.Message);
                 return;
             }
 
