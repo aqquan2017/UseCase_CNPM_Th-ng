@@ -53,6 +53,7 @@
             this.label1.Size = new System.Drawing.Size(412, 43);
             this.label1.TabIndex = 1;
             this.label1.Text = "Thống kê hàng trong kho";
+    //        this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 

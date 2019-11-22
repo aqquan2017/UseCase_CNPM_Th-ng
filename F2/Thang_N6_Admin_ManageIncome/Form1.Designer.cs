@@ -51,7 +51,7 @@
             this.Quan.TabIndex = 1;
             this.Quan.Text = "Quản lý doanh thu";
             this.Quan.UseVisualStyleBackColor = true;
-            this.Quan.Click += new System.EventHandler(this.button1_Click);
+            this.Quan.Click += new System.EventHandler(this.Quan_Click);
             // 
             // Form1
             // 
@@ -62,7 +62,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
-//            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

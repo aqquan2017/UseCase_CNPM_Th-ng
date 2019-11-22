@@ -50,6 +50,7 @@ namespace Thang_CNPM
 
             try
             {
+                //code thêm sản phẩm vào database
                 string sqlAdd = "INSERT INTO Product VALUES (@name , @cost , @number,@code,@unit)";
                 SqlCommand cmd = new SqlCommand(sqlAdd, con);
                 cmd.Parameters.AddWithValue("name", textBox1.Text);
@@ -63,7 +64,12 @@ namespace Thang_CNPM
             {
                 //Đặt khóa chính là name nên nếu lưu trùng tên sẽ throw ra lỗi
                 label7.Text = "Sản phẩm đã tồn tại !";
-                Console.WriteLine(s.Message);
+                return;
+            }
+            catch(Exception e)
+            {
+                //xử lý kiểu
+                label7.Text = "Nhập sai kiểu !!!";
                 return;
             }
 
@@ -172,6 +178,6 @@ namespace Thang_CNPM
             this.DestroyHandle();
         }
 
-      
+       
     }
 }

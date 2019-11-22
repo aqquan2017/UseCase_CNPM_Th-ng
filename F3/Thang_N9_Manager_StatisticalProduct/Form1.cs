@@ -15,11 +15,8 @@ namespace Thang_N9_Manager_StatisticalProduct
     {
         public static Form1 instance;
         public Form1()
-        {
-            if(instance == null)
-            {
-                instance = this;
-            }
+        {        
+            instance = this;       
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-2J4GSB2;Initial Catalog=Product;Integrated Security=True");
@@ -54,5 +51,7 @@ namespace Thang_N9_Manager_StatisticalProduct
             f2.ShowDialog();
             this.Show();
         }
+
+        
     }
 }

@@ -64,7 +64,6 @@
             this.label2.Size = new System.Drawing.Size(130, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên sản phẩm:";
-     //       this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -172,6 +171,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "ADD",
@@ -181,6 +181,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 14;
+            this.comboBox1.Text = "Chọn chức năng";
             // 
             // Form2
             // 

@@ -37,11 +37,10 @@ namespace Thang_N6_Admin_ManageIncome
             dataGridView1.DataSource = dt;
 
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void Quan_Click(object sender, EventArgs e)
         {
             connect();
         }
-
-        
     }
 }

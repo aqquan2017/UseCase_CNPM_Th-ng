@@ -29,6 +29,7 @@ namespace Thang_CNPM
 
             string sql = "Select * from Product ";
 
+            // thực thi lệnh trong csdl
             SqlCommand comm = new SqlCommand(sql, con);
             comm.CommandType = CommandType.Text;
             SqlDataAdapter da = new SqlDataAdapter(comm);
@@ -39,7 +40,7 @@ namespace Thang_CNPM
             con.Close();
 
             dataGridView2.DataSource = dt;
-
+            //bảng hiển thị dữ liệu trong giao diện
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
@@ -64,6 +65,7 @@ namespace Thang_CNPM
             SqlCommand comm = new SqlCommand(sql, con);
             comm.CommandType = CommandType.Text;
             SqlDataAdapter da = new SqlDataAdapter(comm);
+
             DataTable dt = new DataTable();
 
             da.Fill(dt);
